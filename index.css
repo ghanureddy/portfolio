@@ -914,6 +914,13 @@ em {
     white-space: nowrap;
 }
 
+.timeline-desc {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--space-md);
+}
+
 .timeline-details {
     display: flex;
     flex-direction: column;
