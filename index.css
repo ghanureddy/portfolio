@@ -1179,6 +1179,55 @@ em {
     line-height: 1.6;
 }
 
+.project-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--border-subtle);
+    flex-wrap: wrap;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: var(--text-xs);
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: all var(--duration-fast) var(--ease-out);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.project-link:hover {
+    color: var(--text-primary);
+}
+
+.project-link svg {
+    stroke: currentColor;
+    transition: transform var(--duration-fast);
+}
+
+.project-link:hover svg {
+    transform: translateY(-1px);
+}
+
+.project-link-live {
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 4px 10px;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 59, 48, 0.25);
+}
+
+.project-link-live:hover {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+}
+
 /* ── Education Section ─────────────────────────── */
 .edu-cards {
     display: grid;
