@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initStatCounters();
     initSmoothScroll();
     initCertModal();
+    initCertFilters();
 });
 
 /* ── Scroll-Triggered Animations ───────────────── */
@@ -215,5 +216,29 @@ function initCertModal() {
         if (e.key === 'Escape' && modal.classList.contains('active')) {
             closeModal();
         }
+    });
+}
+
+/* ── Certificate Filtering ─────────────────────── */
+function initCertFilters() {
+    const filterBtns = document.querySelectorAll('.cert-filter-btn');
+    const certCards = document.querySelectorAll('.cert-card[data-category]');
+    if (!filterBtns.length || !certCards.length) return;
+
+    filterBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach((b) => b.classList.remove('active'));
+            btn.classList.add('active');
+            const filter = btn.getAttribute('data-filter');
+
+            certCards.forEach((card) => {
+                const categories = (card.getAttribute('data-category') || '').split(' ');
+                if (filter === 'all' || categories.includes(filter)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
     });
 }
