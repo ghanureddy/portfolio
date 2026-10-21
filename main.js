@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initNavigation();
     initStatCounters();
     initSmoothScroll();
+    initCertModal();
 });
 
 /* ── Scroll-Triggered Animations ───────────────── */
@@ -157,5 +158,62 @@ function initSmoothScroll() {
                 });
             }
         });
+    });
+}
+
+/* ── Certificate Lightbox Modal ────────────────── */
+function initCertModal() {
+    const modal = document.getElementById('certModal');
+    if (!modal) return;
+
+    const modalImg = document.getElementById('certModalImg');
+    const modalTitle = document.getElementById('certModalTitle');
+    const closeBtn = document.getElementById('certModalClose');
+
+    function openModal(imgSrc, title) {
+        if (!modalImg || !modalTitle) return;
+        modalImg.src = imgSrc;
+        modalImg.alt = title;
+        modalTitle.textContent = title;
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+        if (modalImg) {
+            modalImg.src = '';
+            modalImg.alt = '';
+        }
+    }
+
+    document.querySelectorAll('[data-cert-img]').forEach((el) => {
+        el.addEventListener('click', (e) => {
+            // If it's an anchor or button inside with its own action, allow standard behavior if requested
+            if (e.target.closest('.cert-link-verify')) return;
+            e.preventDefault();
+            const src = el.getAttribute('data-cert-img');
+            const title = el.getAttribute('data-cert-title') || 'Certificate Preview';
+            if (src) {
+                openModal(src, title);
+            }
+        });
+    });
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeModal);
+    }
+
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
     });
 }
