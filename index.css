@@ -52,7 +52,9 @@
 
     /* Layout */
     --max-width: 1280px;
+    --ticker-height: 36px;
     --nav-height: 64px;
+    --total-header-height: calc(var(--nav-height) + var(--ticker-height));
 
     /* Motion */
     --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
@@ -76,7 +78,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: var(--nav-height);
+    scroll-padding-top: var(--total-header-height);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -119,10 +121,134 @@ em {
     color: white;
 }
 
+/* ── Live Production Status Ticker (Novelty) ──── */
+.status-ticker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--ticker-height);
+    background: #08080a;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--text-secondary);
+}
+
+.status-ticker-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--space-xl);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    overflow: hidden;
+}
+
+.status-ticker-main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.status-pulse-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #10b981;
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    animation: status-pulse-anim 2s infinite;
+    flex-shrink: 0;
+}
+
+@keyframes status-pulse-anim {
+    0% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+    }
+}
+
+.status-label {
+    color: #10b981;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.status-sep {
+    color: #333333;
+}
+
+.status-metric {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.status-avail {
+    color: var(--text-secondary);
+}
+
+.status-ticker-cta {
+    color: var(--accent);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    flex-shrink: 0;
+    transition: opacity var(--duration-fast);
+}
+
+.status-ticker-cta:hover {
+    opacity: 0.75;
+}
+
+/* ── Live Demo Pill (Project Cards) ─────────────── */
+.project-status-badge {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-xs);
+}
+
+.live-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: #10b981;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    padding: 2px 8px;
+    border-radius: 100px;
+    letter-spacing: 0.04em;
+}
+
+.live-pulse {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #10b981;
+    animation: status-pulse-anim 1.8s infinite;
+}
+
 /* ── Navigation ────────────────────────────────── */
 .nav {
     position: fixed;
-    top: 0;
+    top: var(--ticker-height);
     left: 0;
     right: 0;
     z-index: 1000;
@@ -252,7 +378,7 @@ em {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: calc(var(--nav-height) + var(--space-3xl)) var(--space-xl) var(--space-3xl);
+    padding: calc(var(--total-header-height) + var(--space-3xl)) var(--space-xl) var(--space-3xl);
     position: relative;
     overflow: hidden;
 }
@@ -1879,9 +2005,26 @@ em {
         --space-4xl: 3.5rem;
     }
 
+    .status-ticker-inner {
+        padding: 0 var(--space-md);
+    }
+
+    .status-metric,
+    .status-sep {
+        display: none;
+    }
+
+    .status-avail {
+        display: inline;
+        max-width: 220px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
     .nav-links {
         position: fixed;
-        top: var(--nav-height);
+        top: var(--total-header-height);
         left: 0;
         right: 0;
         background: rgba(10, 10, 10, 0.98);
@@ -1908,7 +2051,7 @@ em {
 
     .hero {
         min-height: auto;
-        padding-top: calc(var(--nav-height) + var(--space-2xl));
+        padding-top: calc(var(--total-header-height) + var(--space-2xl));
         padding-bottom: var(--space-3xl);
     }
 

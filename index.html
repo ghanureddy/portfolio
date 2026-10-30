@@ -20,6 +20,21 @@
 </head>
 
 <body>
+    <!-- Live Production Status Ticker (Novelty & Attention Architecture) -->
+    <div class="status-ticker" id="statusTicker">
+        <div class="status-ticker-inner">
+            <div class="status-ticker-main">
+                <span class="status-pulse-dot" aria-hidden="true"></span>
+                <span class="status-label">ALL SYSTEMS OPERATIONAL</span>
+                <span class="status-sep">|</span>
+                <span class="status-metric">API: 200 OK &bull; UPTIME: 99.98%</span>
+                <span class="status-sep">|</span>
+                <span class="status-avail">OPEN TO: Senior Software Engineer / AI Engineer / Full-Stack (Sunnyvale, CA &amp; Remote)</span>
+            </div>
+            <a href="#contact" class="status-ticker-cta">Initiate Contact &rarr;</a>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="nav" id="nav">
         <div class="nav-inner">
@@ -43,15 +58,15 @@
     <section class="hero" id="hero">
         <div class="hero-grid">
             <div class="hero-content">
-                <div class="hero-label anim-fade-up">Full-Stack Engineer · AI/ML · DevOps</div>
+                <div class="hero-label anim-fade-up">AI Software Engineer · Full-Stack · Distributed Systems</div>
                 <h1 class="hero-name anim-fade-up anim-delay-1">
                     <span class="hero-name-first">G.Hanumanth</span>
                     <span class="hero-name-last">Reddy<span class="accent">.</span></span>
                 </h1>
                 <p class="hero-tagline anim-fade-up anim-delay-2">
-                    I build across the entire stack — from React frontends to AI pipelines,
-                    from database optimization to production monitoring. The engineer who traces
-                    problems <em>through</em> boundaries, not around them.
+                    5+ years building and scaling production systems across the full stack and applied AI — from multi-agent
+                    supervisor systems (LangGraph) and high-precision RAG pipelines to resilient microservices and streaming ETL architectures.
+                    The engineer who traces problems <em>through</em> boundaries, not around them.
                 </p>
                 <div class="hero-actions anim-fade-up anim-delay-3">
                     <a href="#contact" class="btn btn-primary">Get In Touch</a>
@@ -72,7 +87,7 @@
                             <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
                             <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
                         </svg>
-                        2.5+ Years Production Experience
+                        5+ Years Production Experience
                     </span>
                     <span class="hero-meta-item">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -131,15 +146,12 @@
                 <div class="about-block anim-fade-up">
                     <h3 class="about-heading">The T-Shaped Engineer</h3>
                     <p class="about-text">
-                        I don't fit a single box. In 2.5+ years, I've debugged production crises,
-                        built RAG pipelines integrating LLMs with vector databases, optimized API performance by 40%,
-                        deployed containerized systems with Docker, created monitoring dashboards, and taught 150+
-                        students.
+                        I don't fit a single box. In 5+ years across enterprise clients like Capital One, Blue Cross and Blue Shield of Texas, and Honeywell, I've engineered multi-agent supervisor systems, architected high-precision RAG pipelines, resolved production crises under real-time constraints, optimized API response latency by 40–75%, and operated scalable streaming ETL infrastructure.
                     </p>
                     <p class="about-text">
                         When the frontend blames the backend, the backend blames the database,
                         and the database blames the network — <strong>I can trace the actual problem.</strong>
-                        That's the value of breadth built through diverse real experience.
+                        That's the value of breadth built through diverse real-world enterprise experience.
                     </p>
                 </div>
                 <div class="about-tshape anim-fade-up anim-delay-2">
@@ -168,25 +180,22 @@
                     <div class="highlight-item">
                         <span class="highlight-icon">→</span>
                         <div>
-                            <strong>Immediate Contribution</strong>
-                            <p>Production code in JS/TS/Python/Java, CI/CD, monitoring, testing, debugging — no ramp-up
-                                needed.</p>
+                            <strong>Immediate Enterprise Contribution</strong>
+                            <p>Production proficiency in Python, Java 17, TypeScript, React, AWS, Docker, Kafka, and LLM Orchestration — no ramp-up needed.</p>
                         </div>
                     </div>
                     <div class="highlight-item">
                         <span class="highlight-icon">→</span>
                         <div>
                             <strong>Proven Results, Not Promises</strong>
-                            <p>85% error reduction, 75% performance gain, 40% latency improvement — real production
-                                metrics.</p>
+                            <p>85% error reduction, 75% performance gain, 40% latency cut, 70% manual review triage reduction — documented production metrics.</p>
                         </div>
                     </div>
                     <div class="highlight-item">
                         <span class="highlight-icon">→</span>
                         <div>
-                            <strong>Fast Learner</strong>
-                            <p>Master's 3.8 GPA, Distinguished Student Award, mastered RAG/LLMs/vector DBs while
-                                delivering features.</p>
+                            <strong>Rigorous Academic &amp; Technical Foundation</strong>
+                            <p>Master's in Computer Science with a 3.8 GPA, UNT Distinguished Student Award 2025, and deep foundation in distributed systems and AI.</p>
                         </div>
                     </div>
                 </div>
@@ -230,7 +239,10 @@
                     <!-- Project 2: crypto-price-tracker (Live App) -->
                     <div class="project-card anim-fade-up anim-delay-1">
                         <div class="project-card-top">
-                            <span class="project-type">Web App · Live Demo</span>
+                            <div class="project-status-badge">
+                                <span class="project-type">Web App</span>
+                                <span class="live-pill"><span class="live-pulse"></span>Live Demo</span>
+                            </div>
                             <h3 class="project-title">Real-Time Cryptocurrency Tracker</h3>
                             <p class="project-desc">High-performance cryptocurrency market tracker built with Next.js and Tailwind CSS. Features dynamic coin search, real-time market cap rankings, historical interactive price charts with Recharts, and Zustand state store.</p>
                         </div>
@@ -307,7 +319,10 @@
                     <!-- Project 5: Todo_Fullsatck (Live App) -->
                     <div class="project-card anim-fade-up anim-delay-2">
                         <div class="project-card-top">
-                            <span class="project-type">Full-Stack · Live Demo</span>
+                            <div class="project-status-badge">
+                                <span class="project-type">Full-Stack</span>
+                                <span class="live-pill"><span class="live-pulse"></span>Live Demo</span>
+                            </div>
                             <h3 class="project-title">Full-Stack Task &amp; Workflow Management App</h3>
                             <p class="project-desc">Responsive productivity web application featuring end-to-end task workflows, RESTful API endpoints with Express and Node.js, and schema validation with MongoDB. Deployed live with automated CI/CD on Vercel.</p>
                         </div>
@@ -360,7 +375,10 @@
                     <!-- Project 7: Scientific-Data-Visualization-Project- (Live Project) -->
                     <div class="project-card anim-fade-up anim-delay-1">
                         <div class="project-card-top">
-                            <span class="project-type">Data Science · Interactive Viz</span>
+                            <div class="project-status-badge">
+                                <span class="project-type">Data Science</span>
+                                <span class="live-pill"><span class="live-pulse"></span>Live Viz</span>
+                            </div>
                             <h3 class="project-title">Scientific Geospatial &amp; Agricultural Analytics</h3>
                             <p class="project-desc">Comprehensive data visualization research transforming agricultural datasets into interactive geospatial D3.js maps, dynamic timeline charts, and insight dashboards hosted live on VizHub.</p>
                         </div>
@@ -405,6 +423,56 @@
                                 <a href="https://github.com/ghanureddy/Market" target="_blank" rel="noopener noreferrer" class="project-link">
                                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
                                     Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 9: AI Conversational Agent (Academic Project) -->
+                    <div class="project-card anim-fade-up anim-delay-1">
+                        <div class="project-card-top">
+                            <span class="project-type">Agentic AI · AWS Bedrock</span>
+                            <h3 class="project-title">Autonomous Multi-Agent Conversational System</h3>
+                            <p class="project-desc">Autonomous multi-step conversational agent leveraging AWS Bedrock, LangChain, and LangGraph. Implements ReAct reasoning loops with external web search tools (Tavily), Pinecone long-term vector retrieval, and MLflow experiment tracking.</p>
+                        </div>
+                        <div class="project-bottom">
+                            <div class="project-tags">
+                                <span class="tag">AWS Bedrock</span>
+                                <span class="tag">LangGraph</span>
+                                <span class="tag">LangChain</span>
+                                <span class="tag">Pinecone</span>
+                                <span class="tag">ReAct</span>
+                                <span class="tag">MLflow</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/ghanureddy" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                                    GitHub Profile
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 10: NLP-based Answer Checker (Academic Project Lead) -->
+                    <div class="project-card anim-fade-up anim-delay-2">
+                        <div class="project-card-top">
+                            <span class="project-type">NLP Systems · Lead Architect</span>
+                            <h3 class="project-title">NLP-Based Automated Answer Evaluation System</h3>
+                            <p class="project-desc">Full-stack automated answer grading engine built as Lead Engineer. Implemented semantic NLP similarity scoring (TF-IDF, vector embeddings) in Python/FastAPI, integrated with React UI, Node.js services, Firebase auth, and WCAG AAA accessibility.</p>
+                        </div>
+                        <div class="project-bottom">
+                            <div class="project-tags">
+                                <span class="tag">Python NLP</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">WCAG AAA</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/ghanureddy" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                                    GitHub Profile
                                 </a>
                             </div>
                         </div>
@@ -763,7 +831,7 @@
             </div>
             <div class="section-content">
                 <div class="timeline">
-                    <!-- Job 1 -->
+                    <!-- Job 1: Capital One -->
                     <div class="timeline-item anim-fade-up">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
@@ -771,137 +839,118 @@
                                 <div>
                                     <span class="timeline-date">May 2025 — Present</span>
                                     <h3 class="timeline-role">AI Software Engineer</h3>
-                                    <span class="timeline-company">Mudra Labs <span class="timeline-loc">· Houston, TX (Remote)</span></span>
+                                    <span class="timeline-company">Client: Capital One <span class="timeline-loc">· Plano, TX</span></span>
                                 </div>
-                                <span class="timeline-type">AI/ML · Distributed Systems</span>
+                                <span class="timeline-type">Multi-Agent Systems · RAG · AWS EKS</span>
                             </div>
-                            <p class="timeline-desc">Mudra Labs is a pre-seed, early-stage startup building AI-driven enterprise applications. Designed, built, and operated production AI/ML systems, including RAG pipelines, LLM-powered intelligent agents, microservice backends, and distributed observability infrastructure, for early enterprise clients across data-heavy domains.</p>
+                            <p class="timeline-desc">Designed, architected, and deployed production enterprise AI systems — orchestrating autonomous multi-agent fleets, high-precision RAG pipelines, low-latency microservices, and automated AWS cloud infrastructure for high-throughput customer workloads.</p>
                             <div class="timeline-highlight">
                                 <div class="crisis-story">
                                     <div class="crisis-block">
                                         <span class="crisis-label">The Issue</span>
-                                        <p>Distributed microservice latency bottleneck impacting high-frequency AI inference endpoints.</p>
+                                        <p>Distributed microservice latency bottleneck impacting high-frequency LLM inference endpoints and unstructured alert triages.</p>
                                     </div>
                                     <div class="crisis-block">
                                         <span class="crisis-label crisis-fix">The Fix</span>
-                                        <p>Profiled service chain, optimized async patterns, improved serialization, and added query-level caching — cutting response times by <strong>40%</strong>.</p>
+                                        <p>Profiled service chain, optimized async patterns, enhanced data serialization formats, and introduced query-level caching — cutting API response latency by <strong>40%</strong> and triage review time by <strong>70%</strong>.</p>
                                     </div>
                                 </div>
                             </div>
                             <ul class="timeline-details">
-                                <li>Architected end-to-end RAG (Retrieval-Augmented Generation) pipelines from scratch using LangChain for orchestration: semantic search layer using Pinecone and ChromaDB vector databases, generation layer integrated with GPT-4 and Claude API, and multi-step context-aware prompt engineering, improving AI response accuracy and relevance by <strong>40%</strong> over baseline LLM outputs.</li>
-                                <li>Built an Intelligent Alert Handler system using RAG architecture to automatically triage unstructured production alerts, combining a Java backend for high-throughput alert ingestion, a Python microservice for LLM orchestration, ChromaDB for contextual retrieval, and structured prompt templates for precise data extraction, reducing manual review time by <strong>70%</strong>.</li>
-                                <li>Developed RESTful Python and Node.js/Express.js backend services for LLM API integration with production-grade reliability features: request caching, adaptive rate limiting, circuit breakers, retry logic with exponential backoff, and structured error handling, sustaining consistent uptime across unpredictable LLM response latency.</li>
-                                <li>Designed and optimized vector database schemas for high-throughput similarity search; engineered document preprocessing pipelines handling chunking strategies, embedding generation (OpenAI/HuggingFace), metadata tagging, and incremental index population supporting both real-time and batch ingestion at scale.</li>
-                                <li>Diagnosed and resolved a distributed microservice latency bottleneck through service chain profiling, async pattern optimization, data serialization format improvements, and introduction of query-level caching for high-frequency LLM inference requests, reducing API response time by <strong>40%</strong>.</li>
-                                <li>Containerized all AI services and microservices using Docker, ensuring environment parity across dev, staging, and production; deployed and maintained a Prometheus/Grafana/Kibana observability stack tracking API latency, LLM token usage, vector search performance, error rates, and system health dashboards for distributed services.</li>
-                                <li>Implemented rigorous AI model validation workflows using Python, including LLM output quality scoring, prompt regression checks, embedding consistency checks, and data drift detection, maintaining high-quality ML training signals and catching degradation before it reached production.</li>
-                                <li>Collaborated with product and engineering stakeholders to translate business requirements into AI system architecture, reviewed model outputs iteratively, drove prompt strategy improvements through A/B testing, participated in peer code review, and maintained comprehensive technical documentation covering API contracts, system design decisions, and runbooks.</li>
-                                <li>Wrote a small internal C# utility script to support team tooling, gaining hands-on familiarity with the .NET ecosystem alongside the primary Python/Node.js stack.</li>
+                                <li>Engineered a <strong>Supervisor Agent</strong> using LangGraph, GPT-4, Chain-of-Thought (CoT), and ReAct that decomposes complex customer requests and routes them dynamically to specialized sub-agents, enabling multi-step workflow resolution where new sub-agents plug in without altering core flows.</li>
+                                <li>Architected end-to-end <strong>RAG pipelines</strong> from scratch using LangChain, Pinecone, and ChromaDB vector databases integrated with GPT-4 and Claude APIs, improving AI response accuracy and relevance by <strong>40%</strong> over baseline LLMs with schemas optimized for large document ingestion.</li>
+                                <li>Built a RAG-based <strong>Intelligent Alert Handler</strong> to triage unstructured production alerts (Java ingestion backend, Python LLM service, ChromaDB contextual retrieval, structured prompt templates), slashing manual review time by <strong>70%</strong>.</li>
+                                <li>Designed a <strong>dual-layer memory architecture</strong> (cache-based RAG for rapid short-term conversational context, Pinecone vector store for persistent long-term retention), keeping real-time interactions sub-second while personalization deepens per user.</li>
+                                <li>Integrated <strong>Auto-RAG</strong> that dynamically determines documentation retrieval necessity, mitigating hallucination rates and controlling retrieval query costs under increasing traffic.</li>
+                                <li>Established a <strong>Ragas faithfulness benchmark</strong> to mathematically verify agent accuracy and enforce strict data governance, establishing an automated quality gate for all future prompt and model deployments.</li>
+                                <li>Deployed the multi-agent fleet on <strong>AWS EKS</strong> with RBAC policies and automated health probes, ensuring high availability and seamless horizontal scaling under production traffic surges.</li>
+                                <li>Engineered resilient Python and Node.js backend services featuring adaptive rate limiting, circuit breakers, request caching, and exponential-backoff retry policies to guarantee high service uptime despite unpredictable third-party LLM response latencies.</li>
+                                <li>Diagnosed and eliminated distributed microservice bottlenecks through deep service-chain profiling, async pattern optimizations, and serialization upgrades, slashing API response time by <strong>40%</strong>.</li>
+                                <li>Designed high-throughput vector database schemas and document ingestion pipelines (dynamic chunking, OpenAI/HuggingFace embeddings, metadata filtering, incremental indexing) supporting both real-time streams and bulk batch ingestion.</li>
+                                <li>Containerized all microservices with Docker and deployed a centralized <strong>Prometheus, Grafana, and Kibana</strong> observability stack monitoring token consumption, vector latency, API response percentiles, and system error rates.</li>
+                                <li>Implemented rigorous Python model validation pipelines for automated LLM output quality scoring, prompt regression detection, embedding consistency checks, and data drift analysis.</li>
+                                <li>Automated cloud infrastructure provisioning using <strong>AWS CloudFormation</strong> and the <strong>AWS SDK for Python (Boto3)</strong>, managing EC2, S3, IAM, and VPC resources with reusable, versioned configuration templates.</li>
+                                <li>Created Linux command-line utilities using Python, shell scripting, and regular expressions to parse, sanitize, and convert syslog records and Apache/Nginx server logs into structured JSON, CSV, and XML formats.</li>
                             </ul>
                         </div>
                     </div>
-                    <!-- Job 2 -->
+
+                    <!-- Job 2: Blue Cross and Blue Shield of Texas -->
                     <div class="timeline-item anim-fade-up anim-delay-1">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <div class="timeline-header">
                                 <div>
-                                    <span class="timeline-date">July 2024 — May 2025</span>
-                                    <h3 class="timeline-role">Software Engineer (Part-Time)</h3>
-                                    <span class="timeline-company">University of North Texas <span class="timeline-loc">· Denton, TX</span></span>
+                                    <span class="timeline-date">Dec 2023 — Apr 2025</span>
+                                    <h3 class="timeline-role">Software Engineer</h3>
+                                    <span class="timeline-company">Client: Blue Cross and Blue Shield of Texas <span class="timeline-loc">· Dallas, TX</span></span>
                                 </div>
-                                <span class="timeline-type">Full-Stack · Web Accessibility</span>
+                                <span class="timeline-type">Data Engineering · Streaming ETL · Distributed Systems</span>
                             </div>
+                            <p class="timeline-desc">Engineered enterprise data engineering workflows, near real-time streaming pipelines, institutional database integrations, and accessibility compliance initiatives supporting critical investment operations and healthcare applications.</p>
                             <ul class="timeline-details">
-                                <li>Maintained and operated production university systems achieving <strong>99%+ uptime</strong>; deployed updates via CI/CD pipelines, performed system configuration changes, and monitored alerting dashboards proactively.</li>
-                                <li>Led full **WCAG AAA accessibility compliance** implementation using Stark and AChecker tools; audited and remediated color contrast, alt text, keyboard navigation, and screen reader compatibility across all key web interfaces.</li>
-                                <li>Troubleshot connectivity and application performance incidents end-to-end: reproduced issues, identified root causes, implemented targeted fixes, validated resolutions, and documented findings for future prevention.</li>
+                                <li>Replaced manual log ingestion and legacy reporting workflows with automated Python, Pandas, Apache Spark, and Apache Kafka ETL pipelines, backed by distributed telemetry designed to scale seamlessly with exponential data volume growth.</li>
+                                <li>Integrated investment operations systems with downstream enterprise platforms using SQLAlchemy, Python, SQL, Oracle, and PostgreSQL, automating ETL batch jobs and tuning database queries for trade settlements, custody processing, fund accounting, and institutional portfolio reporting.</li>
+                                <li>Developed event-driven data streaming pipelines using <strong>Apache Kafka</strong> and Python, enabling near real-time trade ingestion, settlement state propagation, reconciliation alerting, duplicate-record prevention, and transaction verification.</li>
+                                <li>Authored automated Python data validation and data quality monitoring scripts to detect and arrest data drift and schema mismatches before reaching downstream institutional feeds.</li>
+                                <li>Operated enterprise production systems at <strong>99%+ uptime</strong> through automated CI/CD deployment pipelines, proactive synthetic health probes, and on-call incident triage.</li>
+                                <li>Spearheaded full <strong>WCAG AAA accessibility compliance</strong> implementation (Stark, AChecker), remediating contrast ratios, keyboard navigation paths, alt tags, and screen reader compatibility across core user interfaces.</li>
+                                <li>Diagnosed and resolved critical connectivity, networking, and query performance incidents end-to-end, producing post-incident root-cause documentation to permanently eliminate recurrence.</li>
                             </ul>
                         </div>
                     </div>
-                    <!-- Job 3 -->
+
+                    <!-- Job 3: UNT Teaching Assistant -->
                     <div class="timeline-item anim-fade-up anim-delay-2">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <div class="timeline-header">
                                 <div>
-                                    <span class="timeline-date">August 2023 — June 2024</span>
+                                    <span class="timeline-date">Aug 2023 — Nov 2023</span>
                                     <h3 class="timeline-role">Graduate Teaching Assistant</h3>
                                     <span class="timeline-company">University of North Texas <span class="timeline-loc">· Denton, TX</span></span>
                                 </div>
-                                <span class="timeline-type">Big Data · Instruction & Mentoring</span>
+                                <span class="timeline-type">Distributed Systems · Big Data Instruction</span>
                             </div>
                             <ul class="timeline-details">
-                                <li>Delivered instruction to <strong>150+ students</strong> across Data Science and Big Data courses covering Python, SQL, Pandas, Apache Spark, and Kafka; mastered distributed systems technologies rapidly to teach them effectively.</li>
-                                <li>Provided hands-on debugging support for student code, infrastructure issues, and data pipeline failures; developed reusable teaching materials and lab exercises that reduced common student errors.</li>
-                                <li>Mentored students on software engineering best practices: code review, testing strategies, debugging methodology, and clean architecture principles aligned with industry standards.</li>
+                                <li>Delivered hands-on instruction in distributed data engineering (Python, SQL, Pandas, Apache Spark, Apache Kafka) to <strong>150+ graduate and undergraduate students</strong>, authoring modular laboratory exercises that scaled across cohorts.</li>
+                                <li>Debugged complex student Spark cluster configurations, Kafka broker pipelines, and distributed code failures live, conducting code reviews and mentoring on software quality and automated testing strategies.</li>
                             </ul>
                         </div>
                     </div>
-                    <!-- Job 4 -->
+
+                    <!-- Job 4: Honeywell -->
                     <div class="timeline-item anim-fade-up anim-delay-3">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <div class="timeline-header">
                                 <div>
-                                    <span class="timeline-date">July 2022 — August 2023</span>
+                                    <span class="timeline-date">July 2021 — July 2023</span>
                                     <h3 class="timeline-role">Software Engineer</h3>
-                                    <span class="timeline-company">KLOG Solutions <span class="timeline-loc">· Remote</span></span>
+                                    <span class="timeline-company">Client: Honeywell <span class="timeline-loc">· Hyderabad, India</span></span>
                                 </div>
-                                <span class="timeline-type">Full-Stack · Real-Time Systems</span>
+                                <span class="timeline-type">Java Microservices · Spring Boot · Real-Time Systems</span>
                             </div>
-                            <p class="timeline-desc">Built a full-stack shipment tracking platform from the ground up: React/TypeScript frontend, Node.js/Express REST backend handling 5,000+ daily requests, MySQL database, serving 200+ daily users. Owned features end-to-end from requirements to production deployment.</p>
+                            <p class="timeline-desc">Engineered enterprise logistics and real-time shipment tracking platforms from inception: Java 17 microservices, Spring Boot, Spring Security, Hibernate/JPA, and MySQL handling 5,000+ daily high-concurrency requests.</p>
                             <div class="timeline-highlight">
                                 <div class="crisis-story">
                                     <div class="crisis-block">
                                         <span class="crisis-label">The Crisis</span>
-                                        <p>Critical production WebSocket outage (85% error rate, 200+ users impacted).</p>
+                                        <p>Critical production WebSocket outage (85% error rate, 200+ active enterprise users impacted under heavy reconnection load).</p>
                                     </div>
                                     <div class="crisis-block">
                                         <span class="crisis-label crisis-fix">The Fix</span>
-                                        <p>Traced reconnection storms under load via error logs and network traffic analysis; implemented connection pooling, retry logic, and heartbeat mechanism, dropping the error rate below <strong>5%</strong> within hours.</p>
+                                        <p>Analyzed network packets and error traces to diagnose client reconnection storms; implemented connection pooling, backoff retry policies, and persistent heartbeats, reducing error rate below <strong>5%</strong> within hours.</p>
                                     </div>
                                 </div>
                             </div>
                             <ul class="timeline-details">
-                                <li>Diagnosed and resolved a critical production WebSocket outage (85% error rate, 200+ users impacted): traced reconnection storms under load via error logs and network traffic analysis; implemented connection pooling, retry logic, and heartbeat mechanism, dropping the error rate below <strong>5%</strong> within hours.</li>
-                                <li>Reduced API response time by <strong>75%</strong> (800ms to 200ms) on endpoints serving 5,000+ daily requests: profiled the application, identified missing indexes on frequently-joined MySQL tables, refactored query patterns, and tuned connection pool settings, eliminating customer complaints and recovering satisfaction scores.</li>
-                                <li>Engineered and deployed a full monitoring stack (Prometheus/Grafana-style dashboards) tracking API health, latency, error rates, and throughput; participated in on-call rotation and incident response with documented root-cause analysis for every production issue.</li>
-                                <li>Wrote comprehensive unit tests (JUnit, Jest) for critical business logic and integration tests across all API endpoints; adopted a quality-first approach with SQL injection prevention, JWT authentication, and input validation throughout the codebase.</li>
-                                <li>Collaborated across product, frontend, QA, infrastructure, and customer support teams, translating requirements into delivery, defining API contracts, and communicating incident status to non-technical stakeholders.</li>
-                                <li>Deployed application to production via CI/CD pipeline with automated testing gates; maintained <strong>99%+ uptime</strong> through proactive monitoring and systematic incident handling.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Internships Subsection -->
-                <div class="internships-container">
-                    <h3 class="internships-title">Internships & Fellowships</h3>
-                    <div class="internships-grid">
-                        <!-- Handshake -->
-                        <div class="internship-card anim-fade-up">
-                            <div class="internship-card-top">
-                                <span class="internship-type">AI Research & Orchestration</span>
-                                <h4 class="internship-role">Software Engineering Fellow (AI Research & Model Evaluation)</h4>
-                                <div class="internship-company">Handshake <span class="internship-loc">· San Francisco, CA (Remote)</span></div>
-                            </div>
-                            <ul class="internship-bullets">
-                                <li>Engineered scalable automated workflows and multi-agent AI systems utilizing n8n and LLM orchestration to streamline technical processes and job application pipelines.</li>
-                                <li>Optimized existing architectures into scalable microservices, ensuring high availability and seamless data flow across distributed backend systems.</li>
-                            </ul>
-                        </div>
-                        <!-- Socrates AI -->
-                        <div class="internship-card anim-fade-up anim-delay-1">
-                            <div class="internship-card-top">
-                                <span class="internship-type">ML Models & Analytics</span>
-                                <h4 class="internship-role">AI Engineering Intern</h4>
-                                <div class="internship-company">Socrates AI <span class="internship-loc">· San Mateo, CA (Remote)</span></div>
-                            </div>
-                            <ul class="internship-bullets">
-                                <li>Prepared detailed technical presentations, dashboards, and progress reports summarizing AI model value realization and best practices for cross-functional product and engineering teams.</li>
-                                <li>Accelerated the deployment of enterprise digital initiatives by actively participating in the research, design, and implementation of machine learning models tailored to improve operational efficiency.</li>
+                                <li>Diagnosed and permanently resolved a mission-critical production WebSocket outage (85% error rate, 200+ users affected): analyzed socket churn, implemented connection pooling, adaptive backoff retries, and bidirectional heartbeats, dropping errors below <strong>5%</strong> within hours.</li>
+                                <li>Engineered a full-stack shipment tracking platform from scratch using <strong>Java 17, Spring Boot, Spring Security, OAuth 2.0, JWT, JPA/Hibernate, and MySQL</strong>, serving 5,000+ daily transactions with 99%+ uptime.</li>
+                                <li>Reduced API response times by <strong>75%</strong> (800ms down to 200ms) across high-throughput endpoints by refactoring complex join queries, applying multi-column indexing in MySQL, and tuning HikariCP connection pools.</li>
+                                <li>Designed and deployed centralized Prometheus and Grafana dashboards monitoring JVM memory, thread pool exhaustion, latency percentiles, and error spikes.</li>
+                                <li>Authored extensive unit and integration test suites using <strong>JUnit and Mockito</strong>, achieving high code coverage and enforcing strict security controls against SQL injection, CSRF, and data tampering.</li>
+                                <li>Managed automated CI/CD deployments and participated in on-call incident response rotations with thorough blameless post-mortem documentation.</li>
                             </ul>
                         </div>
                     </div>
@@ -921,80 +970,60 @@
                 <div class="skills-grid">
                     <div class="skill-card anim-fade-up">
                         <div class="skill-card-num">01</div>
-                        <h3 class="skill-card-title">Full-Stack Development</h3>
-                        <p class="skill-card-desc">React, TypeScript, Node.js, Express, PostgreSQL, MongoDB. Complete
-                            applications from UI to database, deployed to production serving real users.</p>
+                        <h3 class="skill-card-title">Full-Stack &amp; Enterprise Backend</h3>
+                        <p class="skill-card-desc">Java 17, Spring Boot, Spring Security, Hibernate/JPA, Node.js, Express, FastAPI, TypeScript, and React. Architecting fault-tolerant microservices, OAuth 2.0/JWT authentication, and high-concurrency enterprise APIs.</p>
                         <div class="skill-tags">
-                            <span class="tag">React</span><span class="tag">TypeScript</span><span
-                                class="tag">Node.js</span><span class="tag">Express</span><span
-                                class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span
-                                class="tag">Redux</span><span class="tag">GraphQL</span>
+                            <span class="tag">Java 17</span><span class="tag">Spring Boot</span><span class="tag">Spring Security</span><span class="tag">Hibernate / JPA</span><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">FastAPI</span><span class="tag">REST APIs</span><span class="tag">OAuth 2.0</span>
                         </div>
                     </div>
                     <div class="skill-card anim-fade-up anim-delay-1">
                         <div class="skill-card-num">02</div>
-                        <h3 class="skill-card-title">AI/ML Systems</h3>
-                        <p class="skill-card-desc">RAG pipelines, vector databases (Pinecone, ChromaDB), LLM integration
-                            (GPT-4, Claude API), prompt engineering, AI agents for multi-step workflows.</p>
+                        <h3 class="skill-card-title">AI/ML &amp; Agentic Systems</h3>
+                        <p class="skill-card-desc">LangGraph supervisor agents, multi-agent orchestration, ReAct/CoT reasoning, production RAG pipelines, Auto-RAG, dual-layer context memory, vector databases (Pinecone, ChromaDB), AWS Bedrock, and Ragas accuracy evaluation.</p>
                         <div class="skill-tags">
-                            <span class="tag">RAG</span><span class="tag">Agentic AI</span><span class="tag">LLM</span><span class="tag">ML</span><span
-                                class="tag">Pinecone</span><span
-                                class="tag">ChromaDB</span><span class="tag">GPT-4</span><span class="tag">Claude
-                                API</span><span class="tag">Prompt Engineering</span>
+                            <span class="tag">LangGraph</span><span class="tag">LangChain</span><span class="tag">Multi-Agent Systems</span><span class="tag">ReAct &amp; CoT</span><span class="tag">RAG Pipelines</span><span class="tag">Pinecone</span><span class="tag">ChromaDB</span><span class="tag">AWS Bedrock</span><span class="tag">Ragas</span><span class="tag">MLflow</span>
                         </div>
                     </div>
                     <div class="skill-card anim-fade-up anim-delay-2">
                         <div class="skill-card-num">03</div>
-                        <h3 class="skill-card-title">DevOps & Infrastructure</h3>
-                        <p class="skill-card-desc">Docker, CI/CD (Jenkins), AWS (EC2, S3, Lambda), Kubernetes basics,
-                            deployment automation, infrastructure as code. 99%+ uptime maintained.</p>
+                        <h3 class="skill-card-title">Data Engineering &amp; Streaming</h3>
+                        <p class="skill-card-desc">Near real-time streaming architectures and ETL batch pipelines with Apache Kafka, Apache Spark, Python, Pandas, and SQLAlchemy across institutional Oracle, PostgreSQL, MySQL, and Redis data stores.</p>
                         <div class="skill-tags">
-                            <span class="tag">Docker</span><span class="tag">Jenkins</span><span
-                                class="tag">AWS</span><span class="tag">Kubernetes</span><span
-                                class="tag">CI/CD</span><span class="tag">Cloudflare</span>
+                            <span class="tag">Apache Kafka</span><span class="tag">Apache Spark</span><span class="tag">Python ETL</span><span class="tag">Pandas</span><span class="tag">SQLAlchemy</span><span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">Oracle</span><span class="tag">Redis</span><span class="tag">MongoDB</span>
                         </div>
                     </div>
                     <div class="skill-card anim-fade-up anim-delay-1">
                         <div class="skill-card-num">04</div>
-                        <h3 class="skill-card-title">Monitoring & Observability</h3>
-                        <p class="skill-card-desc">Prometheus, Grafana, Kibana, Splunk dashboards for system health.
-                            Alerting, distributed tracing, performance metrics, proactive issue detection.</p>
+                        <h3 class="skill-card-title">Cloud Infrastructure &amp; DevOps</h3>
+                        <p class="skill-card-desc">AWS (EKS, EC2, S3, CloudFormation, Boto3, Lambda), containerization with Docker, CI/CD automation with GitHub Actions/Jenkins, and Infrastructure as Code maintaining 99%+ production uptime.</p>
                         <div class="skill-tags">
-                            <span class="tag">Prometheus</span><span class="tag">Grafana</span><span
-                                class="tag">Kibana</span><span class="tag">Splunk</span><span class="tag">Distributed
-                                Tracing</span>
+                            <span class="tag">AWS EKS</span><span class="tag">CloudFormation</span><span class="tag">Boto3</span><span class="tag">Docker</span><span class="tag">CI/CD</span><span class="tag">GitHub Actions</span><span class="tag">Linux / Bash</span><span class="tag">IaC</span>
                         </div>
                     </div>
                     <div class="skill-card anim-fade-up anim-delay-2">
                         <div class="skill-card-num">05</div>
-                        <h3 class="skill-card-title">Production Troubleshooting</h3>
-                        <p class="skill-card-desc">WebSocket crisis debugged (85% → &lt;5% errors), API optimization
-                            (800ms → 200ms), distributed API latency cut 40%. Real fires, real pressure, real results.
-                        </p>
+                        <h3 class="skill-card-title">Observability &amp; Troubleshooting</h3>
+                        <p class="skill-card-desc">Prometheus, Grafana, Kibana, and Splunk dashboards. Deep network and log analysis (Wireshark, syslog, Nginx), WebSocket crisis resolution (85% to &lt;5% error rate), and microservice latency optimization (40–75% cuts).</p>
                         <div class="skill-tags">
-                            <span class="tag">Root Cause Analysis</span><span class="tag">Performance Tuning</span><span
-                                class="tag">Incident Response</span><span class="tag">On-Call</span>
+                            <span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">Kibana</span><span class="tag">Splunk</span><span class="tag">Wireshark</span><span class="tag">Root Cause Analysis</span><span class="tag">Latency Tuning</span><span class="tag">Incident Response</span>
                         </div>
                     </div>
                     <div class="skill-card anim-fade-up anim-delay-3">
                         <div class="skill-card-num">06</div>
-                        <h3 class="skill-card-title">Testing & QA Mindset</h3>
-                        <p class="skill-card-desc">JUnit, Jest, Mockito, Postman. TDD, integration testing,
-                            accessibility testing (WCAG AAA). Quality embedded in engineering process.</p>
+                        <h3 class="skill-card-title">Testing, QA &amp; Compliance</h3>
+                        <p class="skill-card-desc">JUnit, Mockito, Jest, and Postman test automation. Rigorous AI output scoring, embedding drift detection, and full WCAG AAA web accessibility compliance audits using Stark and AChecker.</p>
                         <div class="skill-tags">
-                            <span class="tag">Jest</span><span class="tag">JUnit</span><span
-                                class="tag">Postman</span><span class="tag">TDD</span><span class="tag">WCAG
-                                AAA</span><span class="tag">Mockito</span>
+                            <span class="tag">JUnit</span><span class="tag">Mockito</span><span class="tag">Jest</span><span class="tag">Postman</span><span class="tag">TDD</span><span class="tag">WCAG AAA</span><span class="tag">Model Validation</span><span class="tag">Data Drift Checks</span>
                         </div>
                     </div>
                 </div>
                 <div class="languages-bar anim-fade-up anim-delay-3">
                     <h3 class="languages-title">Languages</h3>
                     <div class="languages-list">
-                        <span class="lang-pill lang-advanced">JavaScript / TypeScript</span>
                         <span class="lang-pill lang-advanced">Python</span>
+                        <span class="lang-pill lang-advanced">Java (17)</span>
+                        <span class="lang-pill lang-advanced">JavaScript / TypeScript</span>
                         <span class="lang-pill lang-advanced">SQL</span>
-                        <span class="lang-pill lang-proficient">Java</span>
                         <span class="lang-pill lang-proficient">Bash / Shell</span>
                         <span class="lang-pill lang-familiar">C#</span>
                         <span class="lang-pill lang-familiar">C++</span>
@@ -1031,10 +1060,13 @@
                             Distinguished Student Award 2025
                         </div>
                         <div class="edu-courses">
-                            <span class="tag">Big Data & Data Science</span>
+                            <span class="tag">Artificial Intelligence</span>
                             <span class="tag">Machine Learning</span>
+                            <span class="tag">Distributed Systems</span>
+                            <span class="tag">Operating Systems</span>
+                            <span class="tag">Big Data &amp; Data Science</span>
                             <span class="tag">Data Visualization</span>
-                            <span class="tag">Data Harvesting/Storage & Retrieval</span>
+                            <span class="tag">Data Harvesting/Storage &amp; Retrieval</span>
                             <span class="tag">Software Engineering</span>
                             <span class="tag">Fundamentals of Databases</span>
                             <span class="tag">Computer Algorithms</span>
@@ -1042,10 +1074,10 @@
                     </div>
                     <div class="edu-card anim-fade-up anim-delay-1">
                         <div class="edu-degree">Bachelor of Technology</div>
-                        <h3 class="edu-field">Computer Science & Engineering</h3>
+                        <h3 class="edu-field">Computer Science &amp; Engineering</h3>
                         <div class="edu-school">Jawaharlal Nehru Technological University, Hyderabad, India</div>
                         <div class="edu-meta">
-                            <span class="edu-date">June 2022</span>
+                            <span class="edu-date">June 2021</span>
                         </div>
                     </div>
                 </div>

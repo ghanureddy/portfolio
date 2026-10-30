@@ -70,6 +70,9 @@ function initNavigation() {
     });
 
     // Active section highlighting
+    const headerHeight = (parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height')) || 64) + 
+                         (parseInt(getComputedStyle(document.documentElement).getPropertyValue('--ticker-height')) || 36);
+
     const sectionObserver = new IntersectionObserver(
         (entries) => {
             entries.forEach((entry) => {
@@ -83,7 +86,7 @@ function initNavigation() {
         },
         {
             threshold: 0.3,
-            rootMargin: `-${parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height')) || 64}px 0px -40% 0px`,
+            rootMargin: `-${headerHeight}px 0px -40% 0px`,
         }
     );
 
